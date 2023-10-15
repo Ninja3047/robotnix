@@ -27,7 +27,7 @@ in
 #  kernel.enable = mkIf (elem config.deviceFamily phoneDeviceFamilies &&
 #                        !(elem config.deviceFamily [ "redfin" "barbet"]))
 #                    (mkDefault true);
-  kernel.enable = false;
+  kernel.enable = true;
 
   resources."frameworks/base/core/res" = {
     # Temporary fix for crashes

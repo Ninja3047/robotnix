@@ -4,7 +4,7 @@
 { config, pkgs, lib, ... }:
 
 let
-  inherit (lib) mkIf;
+  inherit (lib) mkIf mkDefault;
 in
 mkIf (config.androidVersion == 12) {
   source.dirs."build/make".patches = [

@@ -13,5 +13,5 @@ mkIf (config.androidVersion == 12) {
     #./build_make/0003-Add-option-to-include-prebuilt-images-when-signing-t.patch # Moved temporarily to modules/pixel/driver-binaries.nix
   ];
 
-  #kernel.clangVersion = mkDefault "r370808";
+  kernel.clangVersion = mkDefault "r416183b1";
 }
